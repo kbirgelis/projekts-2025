@@ -1,67 +1,39 @@
-Ideja par python spy botu tika scrappota :D
+==========================================================================================
+------------------------------------------------------------------------------------------
+  _____          _       _                              _                           _    
+ |  ___|  _ __  (_)   __| |   __ _    ___              | |_   _ __    __ _    ___  | | __
+ | |_    | '__| | |  / _` |  / _` |  / _ \    _____    | __| | '__|  / _` |  / __| | |/ /
+ |  _|   | |    | | | (_| | | (_| | |  __/   |_____|   | |_  | |    | (_| | | (__  |   < 
+ |_|     |_|    |_|  \__,_|  \__, |  \___|              \__| |_|     \__,_|  \___| |_|\_\
+                             |___/                                                       
+------------------------------------------------------------------------------------------
+==========================================================================================
 
-1) Izveidot datubāzi (SQLite) vai JSON failu, lai saglabātu iepirkumu sarakstu
-Izveidot SQLite datubāzi (shopping_list.db).
+Mērķis: izveidot projektu Python valodā. Projekts ir ledusskapja/virtuves produktu izsekotājs.
 
-Vai arī izvēlēties alternatīvu pieeju un izveidot JSON failu (shopping_list.json).
+Problēmas apraksts, kāpēc tā ir aktuāla:
 
-Pārbaudīt datu glabāšanas struktūru (produkti, piegādes datums, daudzums).
+Mūsdienās cilvēki dzīvo pilnas un aizņemtas dzīves un mēdz aizmirst par dažiem produktiem, kuri
+ir dziļi paslēpti virtuves skapjos, vai ledusskapja aizmugurē. Arī man un man radās šāda problēma
+un es sapratu ka tas ir jālabo - ir jāutaisa Python kods kas man ar šo problēmu palīdzēs - laicīgi
+pabrīdinot par produktiem, kuru derīguma termiņi tuvojas beigām.
 
-2) Izveidot funkcionalitāti, lai pievienotu preces iepirkumu sarakstam
-Rakstīt funkciju add_item(), kas pieņem preces nosaukumu, daudzumu un piegādes datumu.
+*Mans Python kods palīdzēs*:
+1) Samazināt pārtikas atkritumus.
+2) Efektīvi izmantot resursus.
+3) Parūpēties par manu veselību.
 
-Validēt ievadītos datus (piemēram, vai piegādes datums ir derīgs un daudzums ir vesels skaitlis).
+(5 + 1) funkcionālās prasības:
+  - Spēja pievienot produktus
+  - Spēja noņemt produktus
+  - Spēja Uzzināt kuriem produktiem pēc 2 dienām beigsies derīguma termiņš
+  - Spēja uzglabāt dokumentus .json failā
+  - Spēja apskatīt laikapstākļus
+  - Spēja rediģēt produktus
 
-Pievienot preces datus datubāzē vai JSON failā.
-
-3) Izveidot funkcionalitāti, lai skatītu visus pievienotos produktus
-Rakstīt funkciju view_items(), lai parādītu visus produktus, kas ir saglabāti datubāzē vai JSON failā.
-
-Pārbaudīt, vai saraksts ir tukšs un atgriezt atbilstošu ziņu.
-
-4) Izveidot atgādinājumu funkciju par tuvojošos piegādes termiņu
-Rakstīt funkciju remind_items(), lai pārbaudītu, kuriem produktiem piegādes datums ir tuvāk par 3 dienām.
-
-Šī funkcija izvadīs atgādinājumu par produktiem, kuru piegādes termiņš tuvojas.
-
-5) Validācija un ievades pārbaude
-Nodrošināt, ka visi ievadītie dati ir pareizi validēti:
-
-Preces nosaukums nedrīkst būt tukšs.
-
-Piegādes datums ir derīgs (piemēram, tas nav pagātne).
-
-Daudzums ir vesels skaitlis.
-
-Ievadīt kļūdu ziņojumus, ja dati ir nederīgi.
-
-6) Izveidot lietotāja interfeisu (CLI vai GUI)
-Izveidot pamata komandrindas interfeisu (CLI), kur lietotājs var ievadīt preces, skatīt sarakstu un saņemt atgādinājumus.
-
-Ja ir vairāk laika, iespējams pievienot vienkāršu grafisko lietotāja saskarni (GUI), izmantojot tkinter.
-
-7) Datu saglabāšana un ielāde pēc startēšanas
-Nodrošināt, lai dati tiktu saglabāti uzreiz pēc izmaiņām.
-
-Ielādēt datus no datubāzes vai JSON faila, kad programma tiek palaista.
-
-8) Testēšana un kļūdu novēršana
-Testēt visus scenārijus:
-
-Pieprasīt un pievienot preces.
-
-Skatīt un izdzēst preces.
-
-Saņemt atgādinājumus par piegādes datumiem.
-
-Ievērot, ka kods ir bez kļūdām, un nav iespējams veikt darbības ar nederīgiem datiem.
-
-9) Pabeigt darbu un veikt izmaiņas GitHub repozitorijā
-Veikt vairākas iterācijas, pievienojot funkcijas, uzlabojot kodu un veiksmīgi dokumentējot darbu.
-
-Izveidot komitus GitHub repozitorijā un saglabāt visus kodēšanas soļus.
-
-10) Piestrādāt pie vizuālā noformējuma (ja laiks atlicis)
-Ja ir laiks, uzlabot lietotāja saskarni, pievienot krāsas un izkārtojumu, lai tas būtu lietotājam draudzīgāks.
-
-Ja tiek izmantots CLI, var pievienot krāsainus tekstus, izmantojot bibliotēku colorama.
+5 nefunkcionālās prasības:
+  - Smuks GUI / UI 
+  - Viss latviešu valodā
+  - Koda atbildes rotātas ar piemērotiem emoji
+  - Datu šifrēšana
+  - 
