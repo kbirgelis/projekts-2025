@@ -1,0 +1,21 @@
+#2 veiksmes scenāriji:
+#1.   Lietotājs ievada: Piens, kategorija: Piena produkti, derīguma termiņš: 2025-06-01
+#      Sagaidāmais rezultāts: Prece veiksmīgi pievienota sarakstam ar pareizu struktūru JSON failā.
+#2.   Lietotājs izvēlas dzēst preci “Piens”
+#      Sagaidāmais rezultāts: Prece tiek atrasta un izdzēsta no saraksta.
+
+#4 lietošanas scenāriji:
+#1. Lietotājs pievienojot preci ievada gadu 3025
+#    Sagaidāmais rezultāts:"❌ Produkta derīguma termiņš jau ir pagājis! Šo produktu vajadzētu izmest."
+#2. Lietotājs cenšas izdzēst produktu kas neeksistē (ir 5 produkti, bet ievada dzēst nr. 6.)
+#    Sagaidāmais rezultāts:"❗ Nederīgs produkta numurs."
+#3. Lietotājs cenšas izdzēst kategoriju kas neeksistē (ir 3 kategorijas, bet ievada "hello")
+#    Sagaidāmais rezultāts:"❗ Jāievada skaitlis!"
+#4. Lietotājs cenšas pievienot divus produktus, kurus abus sauc "Maize" ar atšķirīgiem derīguma termiņiem.
+#    Sagaidāmais rezultāts: produkti veiksmīgi pievienoti, sarakstā atšķiras ar savu derīguma termiņu.
+
+#2 Robežscenāriji
+#1. JSON fails ir bojāts.
+# Sagaidāmais rezultāts: "❗ Kļūda: JSON fails satur nederīgus ierakstus. Tiek ielādēts tukšs saraksts."
+#2. JSON fails ir read-only režīmā:
+# Sagaidāmais rezultāts: "❗ Kļūda: JSON fails satur nederīgus ierakstus. Tiek ielādēts tukšs saraksts."
