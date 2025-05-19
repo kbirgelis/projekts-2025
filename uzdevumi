@@ -32,8 +32,8 @@ pabrīdinot par produktiem, kuru derīguma termiņi tuvojas beigām.
   - Spēja rediģēt produktus
 
 5 nefunkcionālās prasības:
-  - Smuks GUI / UI 
-  - Viss latviešu valodā
-  - Koda atbildes rotātas ar piemērotiem emoji
-  - Datu šifrēšana
-  - 
+  - Smuks GUI / UI .
+  - Viss latviešu valodā.
+  - Koda atbildes rotātas ar piemērotiem emoji.
+  - Koda atbildes sniegtas ar gramatiski pareiziem teikumiem.
+  - Produktu saraksts parādas formātā: NOSAUKUMS - DERĪGUMA TERMIŅŠ - DAUDZUMS - KATEGORIJA
